@@ -465,7 +465,7 @@
 }
 
 .op_iii {
-    background-image: url(/public/Terrace.png);
+    background-image: url(../img/Terrace.png);
     height: 76px;
     width: 76px;
     background-size: cover;
