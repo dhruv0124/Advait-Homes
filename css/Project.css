@@ -25,6 +25,61 @@
 
 
 /* hdr */
+
+/* hdr */
+.navbar-nav {
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.nav-item {
+    position: relative !important;
+    color: white !important;
+    cursor: pointer !important;
+    transition: color 0.3s !important;
+}
+
+.nav-item:hover {
+    color: #A5C33A !important;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: #A5C33A;
+    border-radius: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-item.active::after {
+    width: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width : 576px) {
+    .nav-item::after {
+        display: none;
+    }
+}
+
+
+
+
+
 .btn-outline {
     border: 1px solid white !important;
     border-radius: 0 !important;

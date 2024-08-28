@@ -14,7 +14,8 @@
 .row {
     --bs-gutter-x: 0rem !important;
 }
-.z-index{
+
+.z-index {
     z-index: 1;
 }
 
@@ -23,6 +24,60 @@
 }
 
 /* hdr */
+
+/* hdr */
+.navbar-nav {
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.nav-item {
+    position: relative !important;
+    color: white !important;
+    cursor: pointer !important;
+    transition: color 0.3s !important;
+}
+
+.nav-item:hover {
+    color: #A5C33A !important;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: #A5C33A;
+    border-radius: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-item.active::after {
+    width: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width : 576px) {
+    .nav-item::after {
+        display: none;
+    }
+}
+
+
+
+
 .btn-outline {
     border: 1px solid white !important;
     border-radius: 0 !important;
@@ -90,7 +145,8 @@
     top: 138%;
     left: 47%;
 }
-.fs-64{
+
+.fs-64 {
     font-size: 64px;
 }
 
@@ -107,7 +163,7 @@
         left: 38%;
         font-size: 30px;
     }
-    
+
 }
 
 .pos-ab {
@@ -125,11 +181,12 @@
 }
 
 @media (max-width : 320px) {
-    .pos-ab {  
+    .pos-ab {
         top: 31%;
         left: 1%;
     }
 }
+
 @media (max-width:1440px) {
     .pos-ab {
         content: 'projects';
@@ -265,6 +322,7 @@
     .accordion-body {
         font-size: 14px;
     }
+
     .accordion-header button {
         font-weight: 500;
         font-size: 17px;
@@ -290,18 +348,22 @@
 .fsg-40 {
     font-size: 40px;
 }
+
 .gallary-pos {
     position: absolute;
     top: 45%;
     left: 30%;
 }
-.slide-box:hover{
+
+.slide-box:hover {
     opacity: 0.4;
 }
-.g-none .gallary-pos{
+
+.g-none .gallary-pos {
     display: none;
 }
-.g-none:hover .gallary-pos{
+
+.g-none:hover .gallary-pos {
     display: block;
 }
 
@@ -365,31 +427,37 @@
     }
 
 }
+
 @media (max-width: 425px) {
     .slick-next {
         right: 45% !important;
     }
+
     .slick-prev {
         left: 35% !important;
     }
+
     .slick-next,
     .slick-prev {
         top: 105% !important;
     }
-    
+
 }
+
 @media (max-width:320px) {
     .slick-next {
         right: 42% !important;
     }
+
     .slick-prev {
         left: 30% !important;
     }
+
     .slick-next,
     .slick-prev {
         top: 105% !important;
     }
-    
+
 }
 
 
