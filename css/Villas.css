@@ -46,35 +46,15 @@
 .nav-item:hover {
     color: #A5C33A !important;
 }
-
-.nav-item::after {
+.nav-item .active::after {
     content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 5px;
+    display: block;
+    width: 8px;
+    height: 8px;
     background-color: #A5C33A;
     border-radius: 50%;
-    transition: width 0.3s ease, left 0.3s ease;
-}
-
-.nav-item:hover::after {
-    width: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.nav-item.active::after {
-    width: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-@media (max-width : 576px) {
-    .nav-item::after {
-        display: none;
-    }
+    margin: 0 auto;
+    margin-top: 5px;
 }
 
 
@@ -737,4 +717,11 @@
 
 .bor {
     border: 1px solid #58575769;
+}
+
+.form-control1::placeholder {
+    color: white;
+    opacity: 0.7;
+    font-weight: normal;
+    font-family: 'jost', sans-serif;
 }

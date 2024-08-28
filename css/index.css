@@ -6,8 +6,18 @@
     font-family: "Jost", sans-serif;
 }
 
+@font-face {
+    font-family: 'Tobias';
+    src: url('fonts/Tobias-Regular.woff2') format('woff2'),
+        url('fonts/Tobias-Regular.woff') format('woff'),
+        url('fonts/Tobias-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .font-Kalnia {
     font-family: "Kalnia Glaze", serif;
+    /* font-family: 'Tobias'; */
     font-weight: 700;
 }
 
@@ -51,41 +61,26 @@
     color: #A5C33A !important;
 }
 
-.nav-item::after {
+.nav-item .active::after {
     content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 5px;
+    display: block;
+    width: 8px;
+    height: 8px;
     background-color: #A5C33A;
     border-radius: 50%;
-    transition: width 0.3s ease, left 0.3s ease;
-}
-
-.nav-item:hover::after {
-    width: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.nav-item.active::after {
-    width: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-@media (max-width : 576px) {
-    .nav-item::after {
-        display: none;
-    }
+    margin: 0 auto;
+    margin-top: 5px;
 }
 
 
-.carousel-control-next-icon{
+
+
+.carousel-control-next-icon {
     background-image: url(../img/arrowright.png) !important;
 }
-.carousel-control-next-icon, .carousel-control-prev-icon {
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
     display: inline-block;
     width: 4rem !important;
     height: 4rem !important;
@@ -93,7 +88,8 @@
     background-position: 50%;
     background-size: 100% 100%;
 }
-.carousel-control-prev-icon{
+
+.carousel-control-prev-icon {
     background-image: url(../img/arrowleft.png) !important;
 }
 
@@ -203,6 +199,7 @@
     background-size: cover;
     position: relative;
 }
+
 
 .bg-img::before {
     content: '1111111';
@@ -339,6 +336,16 @@
     .fs-20 {
         font-size: 18px;
     }
+}
+
+.about-box {
+    background-color: white;
+    width: 30%;
+    border-radius: 10px;
+    padding: 20px 0px;
+    right : 0 ;
+    position: absolute;
+    right: 0;
 }
 
 
@@ -1146,7 +1153,7 @@ img {
     /* Zoom in */
 }
 
-.zoom{
+.zoom {
     background-color: #292929;
     padding: 20px;
 }
@@ -1266,4 +1273,15 @@ img {
 
 .bg-dark {
     background-color: #1B1B1B !important;
+}
+
+.form-control1::placeholder {
+    color: white;
+    opacity: 0.7;
+    font-weight: normal;
+    font-family: 'jost', sans-serif;
+}
+
+.border-bottomm {
+    border-bottom: 2px solid white !important;
 }
