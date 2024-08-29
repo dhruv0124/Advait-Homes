@@ -8,18 +8,20 @@
 
 @font-face {
     font-family: 'Tobias';
-    src: url('fonts/Tobias-Regular.woff2') format('woff2'),
-        url('fonts/Tobias-Regular.woff') format('woff'),
-        url('fonts/Tobias-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    src: url(../font/Tobias-Regular.ttf);
+
 }
 
 .font-Kalnia {
-    font-family: "Kalnia Glaze", serif;
-    /* font-family: 'Tobias'; */
+    font-family: 'Tobias';
     font-weight: 700;
+    letter-spacing: 2px;
 }
+
+/* .font-Kalnia {
+    font-family: "Kalnia Glaze", serif;
+    font-weight: 700;
+} */
 
 .row {
     --bs-gutter-x: 0rem !important;
@@ -31,9 +33,9 @@
 
 
 
-.mouse-icon-desk {
+.mouse-icon1 {
     position: absolute;
-    top: 104%;
+    top: 140%;
     left: 46%;
     font-size: 30px;
 }
@@ -76,7 +78,7 @@
 
 
 .carousel-control-next-icon {
-    background-image: url(../img/arrowright.png) !important;
+    background-image: url(../img/circle_right.png) !important;
 }
 
 .carousel-control-next-icon,
@@ -90,7 +92,7 @@
 }
 
 .carousel-control-prev-icon {
-    background-image: url(../img/arrowleft.png) !important;
+    background-image: url(../img/circle_left.png) !important;
 }
 
 .btn-outline {
@@ -343,10 +345,47 @@
     width: 30%;
     border-radius: 10px;
     padding: 20px 0px;
-    right : 0 ;
+    right: 0;
     position: absolute;
     right: 0;
+    bottom: 0;
 }
+
+.check-box {
+    background-color: #82A93C;
+    display: inline;
+    padding: 2px 5px;
+    position: absolute;
+    top: -15px;
+    left: 70px;
+}
+
+.dot-fs-14 {
+    font-size: 7px !important;
+}
+
+/* For Mobile */
+.about-box-mob {
+    background-color: white;
+    width: 34%;
+    border-radius: 10px;
+    padding: 12px 2px;
+    right: 0;
+    position: absolute;
+    right: 15px;
+    bottom: -110%;
+    z-index: 1;
+}
+
+.check-box-mob {
+    background-color: #82A93C;
+    display: inline;
+    padding: 2px 5px;
+    position: absolute;
+    top: -15px;
+    left: 70px;
+}
+
 
 
 /* Gallary */
@@ -368,6 +407,7 @@
     display: none;
 }
 
+
 .g-none:hover .gallary-pos {
     display: block;
 }
@@ -383,7 +423,7 @@
     position: absolute;
     font-family: none !important;
     border: 1px solid white;
-    padding: 5px 10px;
+    padding: 5px 6px;
 }
 
 .slick-next {
@@ -395,11 +435,15 @@
     position: absolute;
     font-family: none !important;
     border: 1px solid white;
-    padding: 5px 10px;
+    padding: 5px 6px;
 }
 
 .slick-prev {
-    left: 90% !important;
+    left: 92% !important;
+}
+
+.border-bottom-color {
+    border-bottom: 1px solid #A5C33A;
 }
 
 /* Change */
@@ -477,6 +521,10 @@
     }
 
 }
+
+
+
+
 
 /*  What We Do ( Our Serrvice ) */
 
@@ -563,6 +611,14 @@
 
 
 /* Project */
+    
+.silder-pos{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+
 .project {
     position: relative;
     width: 100%;
@@ -1285,3 +1341,17 @@ img {
 .border-bottomm {
     border-bottom: 2px solid white !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
