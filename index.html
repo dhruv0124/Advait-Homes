@@ -732,10 +732,14 @@
     <!-- Our Amenities ✔✔-->
     <div class="container mt-5 px-0">
         <div class="container-fluid need">
-            <h5 class="text-green text-center">Our Amenities</h5>
-            <center>
-                <hr style="width: 12%;  color: #82a93c; border-width: 2px;">
-            </center>
+            <div>
+                <h5 class="text-green text-center mb-0">Our Amenities</h5>
+                <center>
+                    <hr style="width: 12%;  color: #82a93c; border-width: 2px;" class="mb-3 mt-2">
+                </center>
+            </div>
+
+
             <div>
                 <h2 class="text-white font-Kalnia  text-center text-uppercase">Everything
                     You Need</h2>
@@ -743,33 +747,44 @@
             <div class="box d-flex justify-content-center">
                 <div class="need_pd tablinks" onclick="openCity(event, 'tab1Content')" id="defaultOpen">
                     <div class="pic">
-                        <div class="op_i"></div>
+                        <div class="op_i active" style="cursor: pointer;">
+                            <img width="100%" src="./img/play.png" alt="">
+                        </div>
                     </div>
                     <p>Play Ground</p>
                 </div>
                 <div class="need_pd" onclick="openCity(event, 'tab2Content')">
                     <div class="pic">
-                        <div class="op_ii"></div>
+                        <div class="op_ii active" style="cursor: pointer;">
+                            <img width="100%" src="./img/parking.png" alt="">
+                        </div>
                     </div>
                     <p>Parking</p>
                 </div>
                 <div class="need_pd" onclick="openCity(event, 'tab3Content')">
                     <div class="pic">
-                        <div class="op_iii"></div>
+                        <div class="op_iii active" style="cursor: pointer;">
+                            <img width="100%" src="./img/terrace.png" alt="">
+                        </div>
                     </div>
                     <p>Terrace</p>
                 </div>
                 <div class="need_pd" onclick="openCity(event, 'tab4Content')">
                     <div class="pic">
-                        <div class="op_iv"></div>
+                        <div class="op_iv active" style="cursor: pointer;">
+                            <img width="100%" src="./img/gym.png" alt="">
+                        </div>
+
                     </div>
                     <p>Gym</p>
                 </div>
                 <div class="need_pd" onclick="openCity(event, 'tab5Content')">
                     <div class="pic">
-                        <div class="op_v"></div>
+                        <div class="op_v active" style="cursor: pointer;">
+                            <img width="100%" src="./img/sit-out-area.png" alt="">
+                        </div>
                     </div>
-                    <p>Sit Out Area</p>
+                    <p class="p-hov">Sit Out Area</p>
                 </div>
             </div>
             <div id="tab1Content" class="tabcontent">
@@ -1064,10 +1079,14 @@
     <!-- Testimonial (What People Are Saying ) -->
     <div class="container-fluid px-0 mt-5 pt-5 mb-5 pb-5">
         <div class="row mb-3">
-            <h5 class="text-green text-center">Testimonial</h5>
-            <center>
-                <hr style="width: 12%;  color: #82a93c; border-width: 2px;">
-            </center>
+            <div>
+                <h5 class="text-green text-center">Testimonial</h5>
+                <center>
+                    <hr style="width: 12%;  color: #82a93c; border-width: 2px;"  class="mb-3 mt-2"  >
+                </center>
+            </div>
+
+
             <div>
                 <h2 class="text-white font-Kalnia  text-center text-uppercase">What People Are Saying </h2>
             </div>
@@ -1470,9 +1489,8 @@
             ]
         });
 
-        // Our Amenities ✔✔
         function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
+            var i, tabcontent, tablinks, images;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
@@ -1481,11 +1499,22 @@
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
+
+            // Remove green filter from all images
+            images = document.querySelectorAll(".pic img");
+            images.forEach(img => img.classList.remove("green-filter"));
+
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
+
+            // Add green filter to the active image
+            var activeImage = evt.currentTarget.querySelector("img");
+            activeImage.classList.add("green-filter");
         }
+
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
+
 
 
         // Read More In Foote ✔✔

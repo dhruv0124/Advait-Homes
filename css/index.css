@@ -15,7 +15,7 @@
 .font-Kalnia {
     font-family: 'Tobias';
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 /* .font-Kalnia {
@@ -611,8 +611,8 @@
 
 
 /* Project */
-    
-.silder-pos{
+
+.silder-pos {
     position: absolute;
     bottom: 0;
     z-index: 1;
@@ -720,49 +720,95 @@ img {
 }
 
 .op_i {
-    background-image: url(../img/play-ground.png);
-    height: 76px;
-    width: 76px;
+    background-color: #333333;
+    border-radius: 49px;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    padding: 8px 8px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .op_ii {
-    background-image: url(../img/parking.png);
-    height: 76px;
-    width: 76px;
+    background-color: #333333;
+    border-radius: 49px;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    padding: 8px 8px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .op_iii {
-    background-image: url(../img/Terrace.png);
-    height: 76px;
-    width: 76px;
+    background-color: #333333;
+    border-radius: 49px;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    padding: 8px 8px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .op_iv {
-    background-image: url(../img/gym.png);
-    height: 76px;
-    width: 76px;
+    background-color: #333333;
+    border-radius: 49px;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    padding: 8px 8px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .op_v {
-    background-image: url(../img/Sit-Out-Area.png);
-    height: 76px;
-    width: 76px;
+    background-color: #333333;
+    border-radius: 49px;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    padding: 15px 10px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
+.op_i img,
+.op_ii img,
+.op_iii img,
+.op_iv img,
+.op_v img {
+    max-width: 100%;
+    /* Ensures the image doesn't overflow the box */
+    height: auto;
+}
+
+.op_i:hover img,
+.op_ii:hover img,
+.op_iii:hover img,
+.op_iv:hover img,
+.op_v:hover img {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(83%) saturate(462%) hue-rotate(35deg) brightness(90%) contrast(80%);
+}
+
+.green-filter {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(83%) saturate(462%) hue-rotate(35deg) brightness(90%) contrast(80%);
+}
+
+
+
 
 .pic_l1 {
     background-image: url(/img/img1.jpg);
@@ -1341,17 +1387,3 @@ img {
 .border-bottomm {
     border-bottom: 2px solid white !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
