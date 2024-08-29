@@ -6,10 +6,22 @@
     font-family: "Jost", sans-serif;
 }
 
+@font-face {
+    font-family: 'Tobias';
+    src: url(../font/Tobias-Regular.ttf);
+
+}
+
 .font-Kalnia {
+    font-family: 'Tobias';
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* .font-Kalnia {
     font-family: "Kalnia Glaze", serif;
     font-weight: 700;
-}
+} */
 
 .row {
     --bs-gutter-x: 0rem !important;
@@ -46,6 +58,7 @@
 .nav-item:hover {
     color: #A5C33A !important;
 }
+
 .nav-item .active::after {
     content: '';
     display: block;
@@ -126,8 +139,8 @@
 
 .mouse-icon {
     position: absolute;
-    top: 138%;
-    left: 47%;
+    top: 145%;
+    left: 44%;
 }
 
 .fs-64 {
@@ -265,16 +278,10 @@
 }
 
 
+
+
 /* welcome home */
-:root {
-    --main-green: rgba(130, 169, 60, 1);
-    --white: rgba(255, 255, 255, 1);
-    --light-gry: rgba(45, 45, 45, 1);
-    --for-font-gry: rgba(127, 127, 127, 1);
-    --full-body-bk: rgba(27, 27, 27, 1);
-
-}
-
+/* Our Amenities */
 /* need */
 .need .row {
     background-color: var(--light-gry);
@@ -301,41 +308,81 @@
 }
 
 .op_i {
-    background-image: url(../img/accessibility.png);
-    height: 76px;
-    width: 76px;
+    background-color: #333333;
+    border-radius: 49px;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    padding: 18px 20px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-
 .op_ii {
-    background-image: url(../img/community.png);
-    height: 76px;
-    width: 76px;
+    background-color: #333333;
+    border-radius: 49px;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    padding: 18px 20px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .op_iii {
-    background-image: url(../img/club.png);
-    height: 76px;
-    width: 76px;
+    background-color: #333333;
+    border-radius: 49px;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    padding: 18px 20px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .op_iv {
-    background-image: url(../img/park.png);
-    height: 76px;
-    width: 76px;
+    background-color: #333333;
+    border-radius: 49px;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    padding: 18px 20px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
+
+
+.op_i img,
+.op_ii img,
+.op_iii img,
+.op_iv img {
+    max-width: 100%;
+    /* Ensures the image doesn't overflow the box */
+    height: auto;
+}
+
+.op_i:hover img,
+.op_ii:hover img,
+.op_iii:hover img,
+.op_iv:hover img {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(83%) saturate(462%) hue-rotate(35deg) brightness(90%) contrast(80%);
+}
+
+.green-filter {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(83%) saturate(462%) hue-rotate(35deg) brightness(90%) contrast(80%);
+}
+
+
 
 
 .pic_l1 {
@@ -391,7 +438,7 @@
 .need_pd p,
 .need p {
     font-family: "Jost", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0.16px;
@@ -404,7 +451,6 @@
 }
 
 /* res */
-
 /* responsive */
 @media(max-width:991px) {
 
@@ -613,6 +659,42 @@
 
 
 
+/*===================================== DD */
+:root {
+    --main-green: rgba(130, 169, 60, 1);
+    --white: rgba(255, 255, 255, 1);
+    --light-gry: rgba(45, 45, 45, 1);
+    --for-font-gry: rgba(127, 127, 127, 1);
+    --full-body-bk: rgba(27, 27, 27, 1);
+
+}
+
+/* .need .row {
+    background-color: var(--light-gry);
+} */
+
+.pic_l {
+    background-image: url('/img/img1.jpg');
+    height: 457px;
+    width: 98%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 23px 0px;
+}
+
+.need p {
+    font-size: 10px;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.16px;
+    color: var(--white);
+}
+
+
+
 /* Floor */
 .bg-card {
     background-color: #2D2D2D !important;
@@ -724,4 +806,8 @@
     opacity: 0.7;
     font-weight: normal;
     font-family: 'jost', sans-serif;
+}
+
+.dot-fs-14 {
+    font-size: 7px !important;
 }

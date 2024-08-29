@@ -155,8 +155,9 @@
     right: 20%;
     bottom: 349px !important;
     left: 15%;
+    top: 27% !important;
     padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding-bottom: 0 !important;
     color: #fff;
     text-align: center;
 }
@@ -1293,6 +1294,8 @@ img {
 
 
 
+
+
 /* Get Inspired */
 .get-box {
     margin-left: 10px;
@@ -1307,10 +1310,10 @@ img {
 .get-pos {
     background-color: #82A93C;
     color: white;
-    display: inline-block;
     position: absolute;
     bottom: 117px;
     right: 19px;
+    padding: 5px 10px;
 }
 
 @media (max-width : 768px) {

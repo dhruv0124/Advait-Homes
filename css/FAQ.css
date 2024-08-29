@@ -6,10 +6,22 @@
     font-family: "Jost", sans-serif;
 }
 
+@font-face {
+    font-family: 'Tobias';
+    src: url(../font/Tobias-Regular.ttf);
+
+}
+
 .font-Kalnia {
+    font-family: 'Tobias';
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* .font-Kalnia {
     font-family: "Kalnia Glaze", serif;
     font-weight: 700;
-}
+} */
 
 .row {
     --bs-gutter-x: 0rem !important;
@@ -123,7 +135,7 @@
 
 .mouse-icon {
     position: absolute;
-    top: 138%;
+    top: 145%;
     left: 47%;
 }
 
@@ -333,7 +345,7 @@
 .gallary-pos {
     position: absolute;
     top: 45%;
-    left: 30%;
+    left: 35%;
 }
 
 .slide-box:hover {
@@ -343,6 +355,7 @@
 .g-none .gallary-pos {
     display: none;
 }
+
 
 .g-none:hover .gallary-pos {
     display: block;
@@ -359,25 +372,38 @@
     position: absolute;
     font-family: none !important;
     border: 1px solid white;
-    padding: 5px 10px;
+    padding: 5px 6px;
 }
 
 .slick-next {
     right: 3% !important;
 }
 
-
 .slick-prev:before {
     content: '→';
     position: absolute;
     font-family: none !important;
     border: 1px solid white;
-    padding: 5px 10px;
+    padding: 5px 6px;
 }
 
-
 .slick-prev {
-    left: 90% !important;
+    left: 92% !important;
+}
+
+.border-bottom-color {
+    border-bottom: 1px solid #A5C33A;
+}
+
+/* Change */
+.slick-prev:hover:before {
+    background-color: #82A93C !important;
+    color: white;
+}
+
+.slick-next:hover:before {
+    background-color: #82A93C !important;
+    color: white;
 }
 
 @media (min-width : 991px) {
@@ -439,18 +465,10 @@
         top: 105% !important;
     }
 
-}
+    .fsg-40 {
+        font-size: 22px;
+    }
 
-
-/* Change */
-.slick-prev:hover:before {
-    background-color: #82A93C !important;
-    color: white;
-}
-
-.slick-next:hover:before {
-    background-color: #82A93C !important;
-    color: white;
 }
 
 

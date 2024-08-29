@@ -7,7 +7,10 @@
     <title>Villas</title>
     <link rel="stylesheet" href="css/Villas.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
@@ -33,58 +36,64 @@
             </div>
         </div>
         <!-- hdr ✔✔ -->
-        <nav class="navbar navbar-expand-lg" style="position: absolute; top: 0; width: 100%; z-index: 10;">
-            <div class="container">
-                <a class="navbar-brand text-white" href="#"><img src="/img/Mask group.png" style="color: white;"
-                        width="100px" alt></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-white fs-18 jost-font" aria-current="page"
-                                href="/index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white fs-18 jost-font " aria-current="page" href="/About.html">About
-                                Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white fs-18 jost-font " aria-current="page"
-                                href="/Project.html">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white fs-18 jost-font " aria-current="page"
-                                href="/Service.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white fs-18 jost-font " aria-current="page"
-                                href="/Amenities.html">Amenities</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-green fs-18 jost-font " aria-current="page"
-                                href="/Villas.html">Villas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white fs-18 jost-font " aria-current="page"
-                                href="/FAQ.html">FAQ’s</a>
-                        </li>
-                    </ul>
-                    <button class="btn btn-outline text-white fs-18 jost-font me-2" type="button">Get A Quote
-                        <i class="fa-solid fa-angles-right"></i>
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top"
+                style="position: absolute; top: 0; width: 100%; z-index: 10;">
+                <div class="container">
+                    <a class="navbar-brand text-white" href="#"><img src="/img/Mask group.png" style="color: white;"
+                            width="100" alt></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white fs-18 jost-font" aria-current="page"
+                                    href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-white fs-18 jost-font " aria-current="page"
+                                    href="/About.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-white fs-18 jost-font " aria-current="page"
+                                    href="/Project.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-white fs-18 jost-font " aria-current="page"
+                                    href="/Service.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-white fs-18 jost-font " aria-current="page"
+                                    href="/Amenities.html">Amenities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  active text-green  fs-18 jost-font " aria-current="page"
+                                    href="/Villas.html">Villas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-white fs-18 jost-font " aria-current="page"
+                                    href="/FAQ.html">FAQ’s</a>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline text-white fs-18 jost-font me-2" type="button">Get A Quote
+                            <i class="fa-solid fa-angles-right"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
 
     </div>
+
+
 
     <!-- Our Amenities ✔✔-->
     <div class="container px-0 mt-5">
         <div class="container-fluid  pt-md-5 need">
+
             <h5 class="text-green text-center">welcome home</h5>
             <center>
                 <hr style="width: 15%;  color: #82a93c; border-width: 2px;">
@@ -97,25 +106,33 @@
             <div class="box d-flex justify-content-center">
                 <div class="need_pd tablinks" onclick="openCity(event, 'tab1Content')" id="defaultOpen">
                     <div class="pic">
-                        <div class="op_i"></div>
+                        <div class="op_i active" style="cursor: pointer;">
+                            <img width="100%" src="./img/access.png" alt="">
+                        </div>
                     </div>
                     <p>Accessibility</p>
                 </div>
                 <div class="need_pd" onclick="openCity(event, 'tab2Content')">
                     <div class="pic">
-                        <div class="op_ii"></div>
+                        <div class="op_ii active" style="cursor: pointer;">
+                            <img width="100%" src="./img/community.png" alt="">
+                        </div>
                     </div>
                     <p>Community Living</p>
                 </div>
                 <div class="need_pd" onclick="openCity(event, 'tab3Content')">
                     <div class="pic">
-                        <div class="op_iii"></div>
+                        <div class="op_iii active" style="cursor: pointer;">
+                            <img width="100%" src="./img/clubhouse.png" alt="">
+                        </div>
                     </div>
                     <p>Clubhouse</p>
                 </div>
                 <div class="need_pd" onclick="openCity(event, 'tab4Content')">
                     <div class="pic">
-                        <div class="op_iv"></div>
+                        <div class="op_iv active" style="cursor: pointer;">
+                            <img width="100%" src="./img/park.png" alt="">
+                        </div>
                     </div>
                     <p>Parks</p>
                 </div>
@@ -131,13 +148,13 @@
                         </h2>
                         <ul class="ps-0 mt-3">
                             <div class="d-flex mb-3">
-                                <i class="fa-solid mt-1 fa-circle fs-6 text-green me-1"></i>
+                                <i class="fa-solid mt-1 fa-circle dot-fs-14 mt-2 text-green me-1"></i>
                                 <li class="text-gray text-justify">Conveniently located on the north-side of Medchal
                                     (NH-44)
                                 </li>
                             </div>
                             <div class="d-flex mb-3">
-                                <i class="fa-solid mt-1 fa-circle fs-6 text-green me-1"></i>
+                                <i class="fa-solid mt-1 fa-circle dot-fs-14 mt-2 text-green me-1"></i>
                                 <li class="text-gray text-justify"> Medchal has emerged as a rapidly expanding
                                     residential area
                                     in Hyderabad's thriving north zone, given its proximity to Kompally and
@@ -145,7 +162,7 @@
                                 </li>
                             </div>
                             <div class="d-flex mb-3">
-                                <i class="fa-solid mt-1 fa-circle fs-6 text-green me-1"></i>
+                                <i class="fa-solid mt-1 fa-circle dot-fs-14 mt-2 text-green me-1"></i>
                                 <li class="text-gray text-justify"> Unmatched living experience amid excellent social
                                     infrastructure, including renowned schools, hospitals, and shopping complexes</li>
                             </div>
@@ -164,19 +181,19 @@
                         </h2>
                         <ul class="ps-0 mt-3">
                             <div class="d-flex mb-3">
-                                <i class="fa-solid mt-1 fa-circle fs-6 text-green me-2"></i>
+                                <i class="fa-solid mt-1 fa-circle dot-fs-14 mt-2 text-green me-2"></i>
                                 <li class="text-gray">Conveniently located on the north-side of Medchal (NH-44)
                                 </li>
                             </div>
                             <div class="d-flex mb-3">
-                                <i class="fa-solid mt-1 fa-circle fs-6 text-green me-2"></i>
+                                <i class="fa-solid mt-1 fa-circle dot-fs-14 mt-2 text-green me-2"></i>
                                 <li class="text-gray"> Medchal has emerged as a rapidly expanding residential area
                                     in Hyderabad's thriving north zone, given its proximity to Kompally and
                                     Secunderabad's commercial centers
                                 </li>
                             </div>
                             <div class="d-flex mb-3">
-                                <i class="fa-solid mt-1 fa-circle fs-6 text-green me-2"></i>
+                                <i class="fa-solid mt-1 fa-circle dot-fs-14 mt-2 text-green me-2"></i>
                                 <li class="text-gray"> Unmatched living experience amid excellent social
                                     infrastructure, including renowned schools, hospitals, and shopping complexes</li>
                             </div>
@@ -195,19 +212,19 @@
                         </h2>
                         <ul class="ps-0 mt-3">
                             <div class="d-flex mb-3">
-                                <i class="fa-solid mt-1 fa-circle fs-6 text-green me-2"></i>
+                                <i class="fa-solid mt-1 fa-circle dot-fs-14 mt-2 text-green me-2"></i>
                                 <li class="text-gray">Conveniently located on the north-side of Medchal (NH-44)
                                 </li>
                             </div>
                             <div class="d-flex mb-3">
-                                <i class="fa-solid mt-1 fa-circle fs-6 text-green me-2"></i>
+                                <i class="fa-solid mt-1 fa-circle dot-fs-14 mt-2 text-green me-2"></i>
                                 <li class="text-gray"> Medchal has emerged as a rapidly expanding residential area
                                     in Hyderabad's thriving north zone, given its proximity to Kompally and
                                     Secunderabad's commercial centers
                                 </li>
                             </div>
                             <div class="d-flex mb-3">
-                                <i class="fa-solid mt-1 fa-circle fs-6 text-green me-2"></i>
+                                <i class="fa-solid mt-1 fa-circle dot-fs-14 mt-2 text-green me-2"></i>
                                 <li class="text-gray"> Unmatched living experience amid excellent social
                                     infrastructure, including renowned schools, hospitals, and shopping complexes</li>
                             </div>
@@ -226,19 +243,19 @@
                         </h2>
                         <ul class="ps-0 mt-3">
                             <div class="d-flex mb-3">
-                                <i class="fa-solid mt-1 fa-circle fs-6 text-green me-2"></i>
+                                <i class="fa-solid mt-1 fa-circle dot-fs-14 mt-2 text-green me-2"></i>
                                 <li class="text-gray">Conveniently located on the north-side of Medchal (NH-44)
                                 </li>
                             </div>
                             <div class="d-flex mb-3">
-                                <i class="fa-solid mt-1 fa-circle fs-6 text-green me-2"></i>
+                                <i class="fa-solid mt-1 fa-circle dot-fs-14 mt-2 text-green me-2"></i>
                                 <li class="text-gray"> Medchal has emerged as a rapidly expanding residential area
                                     in Hyderabad's thriving north zone, given its proximity to Kompally and
                                     Secunderabad's commercial centers
                                 </li>
                             </div>
                             <div class="d-flex mb-3">
-                                <i class="fa-solid mt-1 fa-circle fs-6 text-green me-2"></i>
+                                <i class="fa-solid mt-1 fa-circle dot-fs-14 mt-2 text-green me-2"></i>
                                 <li class="text-gray"> Unmatched living experience amid excellent social
                                     infrastructure, including renowned schools, hospitals, and shopping complexes</li>
                             </div>
@@ -248,6 +265,8 @@
             </div>
         </div>
     </div>
+
+
 
     <!-- Your Neighbourhood -->
     <div class="container-fluid ps-0 my-5 d-md-block d-none">
@@ -430,6 +449,8 @@
         </div>
     </div>
 
+
+
     <!-- Floor Plans -->
     <div class="container-fluid my-5 d-md-block d-none">
         <div class="container">
@@ -442,24 +463,24 @@
                 </p>
             </div>
             <div class="row ">
-                <div class="col-12 col-lg-4 p-md-2" style="height: 500px; overflow: hidden;">
-                    <div class="bg-card p-3">
-                        <div class="box-img ">
+                <div class="col-12 col-lg-4 p-md-2">
+                    <div class="bg-card p-3 rounded " style="height: 535px;">
+                        <div class="box-img rounded">
                             <img src="/img/pngwing 1.png" width="100%" class="card-img-top" alt="...">
                         </div>
                         <div class="card-body">
                             <h5 class="font-Kalnia fs-22 mt-3">3 BHK East-facing Duplex Villas</h5>
                             <ul class="ps-0 mt-3 mb-0">
                                 <div class="d-flex mb-3">
-                                    <i class="fa-solid mt-1 fa-circle fs-14 text-green me-2"></i>
+                                    <i class="fa-solid  mt-2 fa-circle dot-fs-14 text-green me-2"></i>
                                     <li class="text-white">A lounge (with covered terrace)</li>
                                 </div>
                                 <div class="d-flex mb-3">
-                                    <i class="fa-solid mt-1 fa-circle fs-14 text-green me-2"></i>
+                                    <i class="fa-solid  mt-2 fa-circle dot-fs-14 text-green me-2"></i>
                                     <li class="text-white"> 2 Bedrooms (1 with a dressing area and covered terrace)</li>
                                 </div>
                                 <div class="d-flex">
-                                    <i class="fa-solid mt-1 fa-circle fs-14 text-green me-2"></i>
+                                    <i class="fa-solid  mt-2 fa-circle dot-fs-14 text-green me-2"></i>
                                     <li class="text-white"> Puja room</li>
                                 </div>
                             </ul>
@@ -467,8 +488,8 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-4 p-md-2" style="height: 500px; overflow: hidden;">
-                    <div class="bg-card p-3">
+                <div class="col-12 col-lg-4 p-md-2">
+                    <div class="bg-card p-3 rounded" style="height: 535px;">
                         <div class="box-img ">
                             <img src="/img/pngwing 2.png" class="card-img-top" width="100%" alt="...">
                         </div>
@@ -476,11 +497,11 @@
                             <h5 class="font-Kalnia fs-22 mt-3">3 BHK East-facing Duplex Villas</h5>
                             <ul class="ps-0 mt-3 mb-0">
                                 <div class="d-flex mb-3">
-                                    <i class="fa-solid mt-1 fa-circle fs-14 text-green me-2"></i>
+                                    <i class="fa-solid  mt-2 fa-circle dot-fs-14 text-green me-2"></i>
                                     <li class="text-white">Lounge area with sit out</li>
                                 </div>
                                 <div class="d-flex mb-3">
-                                    <i class="fa-solid mt-1 fa-circle fs-14 text-green me-2"></i>
+                                    <i class="fa-solid  mt-2 fa-circle dot-fs-14 text-green me-2"></i>
                                     <li class="text-white">2 bedrooms with attached bath (including a sit out for 1 of
                                         the bedrooms)</li>
                                 </div>
@@ -489,8 +510,8 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-4 p-md-2" style="height: 500px; overflow: hidden;">
-                    <div class="bg-card p-3">
+                <div class="col-12 col-lg-4 p-md-2">
+                    <div class="bg-card p-3 rounded" style="height: 535px;">
                         <div class="box-img ">
                             <img src="/img/pngwing 3.png" width="100%" class="card-img-top text-center" alt="...">
                         </div>
@@ -498,15 +519,15 @@
                             <h5 class="font-Kalnia fs-22 mt-3">3 BHK East-facing Duplex Villas</h5>
                             <ul class="ps-0 mt-3 mb-0">
                                 <div class="d-flex mb-3">
-                                    <i class="fa-solid mt-1 fa-circle fs-14 text-green me-2"></i>
+                                    <i class="fa-solid  mt-2 fa-circle dot-fs-14 text-green me-2"></i>
                                     <li class="text-white">2 bedrooms (1 with an attached sit out)</li>
                                 </div>
                                 <div class="d-flex mb-3">
-                                    <i class="fa-solid mt-1 fa-circle fs-14 text-green me-2"></i>
+                                    <i class="fa-solid  mt-2 fa-circle dot-fs-14 text-green me-2"></i>
                                     <li class="text-white">Lounge area with an attached sit out</li>
                                 </div>
                                 <div class="d-flex">
-                                    <i class="fa-solid mt-1 fa-circle fs-14 text-green me-2"></i>
+                                    <i class="fa-solid  mt-2 fa-circle dot-fs-14 text-green me-2"></i>
                                     <li class="text-white">Puja room</li>
                                 </div>
                             </ul>
@@ -516,7 +537,6 @@
             </div>
         </div>
     </div>
-
 
 
 
@@ -734,9 +754,9 @@
 
     <script>
 
-        // Our Amenities
+        // Our Aeenties
         function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
+            var i, tabcontent, tablinks, images;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
@@ -745,8 +765,17 @@
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
+
+            // Remove green filter from all images
+            images = document.querySelectorAll(".pic img");
+            images.forEach(img => img.classList.remove("green-filter"));
+
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
+
+            // Add green filter to the active image
+            var activeImage = evt.currentTarget.querySelector("img");
+            activeImage.classList.add("green-filter");
         }
 
         // Get the element with id="defaultOpen" and click on it

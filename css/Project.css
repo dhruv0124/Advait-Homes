@@ -6,10 +6,22 @@
     font-family: "Jost", sans-serif;
 }
 
+@font-face {
+    font-family: 'Tobias';
+    src: url(../font/Tobias-Regular.ttf);
+
+}
+
 .font-Kalnia {
+    font-family: 'Tobias';
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* .font-Kalnia {
     font-family: "Kalnia Glaze", serif;
     font-weight: 700;
-}
+} */
 
 .row {
     --bs-gutter-x: 0rem !important;
@@ -45,6 +57,7 @@
 .nav-item:hover {
     color: #A5C33A !important;
 }
+
 .nav-item .active::after {
     content: '';
     display: block;
@@ -227,7 +240,7 @@
 .gallary-pos {
     position: absolute;
     top: 45%;
-    left: 30%;
+    left: 35%;
 }
 
 .slide-box:hover {
@@ -237,6 +250,7 @@
 .g-none .gallary-pos {
     display: none;
 }
+
 
 .g-none:hover .gallary-pos {
     display: block;
@@ -253,24 +267,27 @@
     position: absolute;
     font-family: none !important;
     border: 1px solid white;
-    padding: 5px 10px;
+    padding: 5px 6px;
 }
 
 .slick-next {
     right: 3% !important;
 }
 
-
 .slick-prev:before {
     content: '→';
     position: absolute;
     font-family: none !important;
     border: 1px solid white;
-    padding: 5px 10px;
+    padding: 5px 6px;
 }
 
 .slick-prev {
-    left: 90% !important;
+    left: 92% !important;
+}
+
+.border-bottom-color {
+    border-bottom: 1px solid #A5C33A;
 }
 
 /* Change */
@@ -283,8 +300,6 @@
     background-color: #82A93C !important;
     color: white;
 }
-
-
 
 @media (min-width : 991px) {
     .fsg-40 {
@@ -345,20 +360,15 @@
         top: 105% !important;
     }
 
+    .fsg-40 {
+        font-size: 22px;
+    }
+
 }
 
 
 
 /* Our Amenities */
-:root {
-    --main-green: rgba(130, 169, 60, 1);
-    --white: rgba(255, 255, 255, 1);
-    --light-gry: rgba(45, 45, 45, 1);
-    --for-font-gry: rgba(127, 127, 127, 1);
-    --full-body-bk: rgba(27, 27, 27, 1);
-
-}
-
 /* need */
 .need .row {
     background-color: var(--light-gry);
@@ -378,7 +388,6 @@
 
 .need_pd:hover {
     color: var(--main-green);
-
 }
 
 .need_pd p {
@@ -386,49 +395,95 @@
 }
 
 .op_i {
-    background-image: url(../img/play-ground.png);
-    height: 76px;
-    width: 76px;
+    background-color: #333333;
+    border-radius: 49px;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    padding: 8px 8px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .op_ii {
-    background-image: url(../img/parking.png);
-    height: 76px;
-    width: 76px;
+    background-color: #333333;
+    border-radius: 49px;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    padding: 8px 8px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .op_iii {
-    background-image: url(../img/Terrace.png);
-    height: 76px;
-    width: 76px;
+    background-color: #333333;
+    border-radius: 49px;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    padding: 8px 8px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .op_iv {
-    background-image: url(../img/gym.png);
-    height: 76px;
-    width: 76px;
+    background-color: #333333;
+    border-radius: 49px;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    padding: 8px 8px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .op_v {
-    background-image: url(../img/Sit-Out-Area.png);
-    height: 76px;
-    width: 76px;
+    background-color: #333333;
+    border-radius: 49px;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    padding: 15px 10px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
+.op_i img,
+.op_ii img,
+.op_iii img,
+.op_iv img,
+.op_v img {
+    max-width: 100%;
+    /* Ensures the image doesn't overflow the box */
+    height: auto;
+}
+
+.op_i:hover img,
+.op_ii:hover img,
+.op_iii:hover img,
+.op_iv:hover img,
+.op_v:hover img {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(83%) saturate(462%) hue-rotate(35deg) brightness(90%) contrast(80%);
+}
+
+.green-filter {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(83%) saturate(462%) hue-rotate(35deg) brightness(90%) contrast(80%);
+}
+
+
+
 
 .pic_l1 {
     background-image: url(/img/img1.jpg);
@@ -483,7 +538,7 @@
 .need_pd p,
 .need p {
     font-family: "Jost", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0.16px;
@@ -703,7 +758,52 @@
 }
 
 
+
+/*===================================== DD */
+:root {
+    --main-green: rgba(130, 169, 60, 1);
+    --white: rgba(255, 255, 255, 1);
+    --light-gry: rgba(45, 45, 45, 1);
+    --for-font-gry: rgba(127, 127, 127, 1);
+    --full-body-bk: rgba(27, 27, 27, 1);
+
+}
+
+/* .need .row {
+    background-color: var(--light-gry);
+} */
+
+.pic_l {
+    background-image: url('/img/img1.jpg');
+    height: 457px;
+    width: 98%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 23px 0px;
+}
+
+.need p {
+    font-size: 10px;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.16px;
+    color: var(--white);
+}
+
+
+
 /* Project */
+
+.silder-pos {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+
 .project {
     position: relative;
     width: 100%;
