@@ -18,6 +18,19 @@
     letter-spacing: 1px;
 }
 
+.about-fs-20 {
+    font-size: 15px;
+}
+
+.about-fs-40 {
+    font-size: 24px;
+}
+
+.about-fs-6 {
+    font-size: 13px;
+}
+
+
 /* .font-Kalnia {
     font-family: "Kalnia Glaze", serif;
     font-weight: 700;
@@ -147,7 +160,7 @@
 
 .mouse-icon {
     position: absolute;
-    top: 145%;
+    top: 138%;
     left: 47%;
 }
 
@@ -179,7 +192,7 @@
     content: 'projects';
     position: absolute;
     text-align: center;
-    top: 35%;
+    top: 28%;
     left: 29%;
     color: white;
     z-index: 1;
@@ -474,7 +487,7 @@
     .gallary-pos {
         position: absolute;
         top: 45%;
-        left: 28%;
+        left: 33%;
     }
 
 

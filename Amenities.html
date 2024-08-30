@@ -19,8 +19,8 @@
 
 <body class="bg-dark">
 
-    <!-- hdr -->
-    <div class="container-fluid bg-img">
+    <!-- desktop -->
+    <div class="container-fluid bg-img d-md-block d-none">
         <div class="pos-ab">
             <h2 class="font-Kalnia fs-64 text-uppercase"> AMENITIES</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium mollis feugiat. Aenean <br
@@ -85,22 +85,102 @@
     </div>
 
 
+    <!-- mobile -->
+    <div class="container-fluid bg-img-mob  d-md-none d-block">
+        <div class="pos-ab-mob">
+            <h2 class="font-Kalnia fs-20 text-uppercase">Amenities</h2>
+            <p class="fs-13">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Nam pretium mollis.</p>
+            <div class="mouse-icon-mob">
+                <img src="/img/Mouse-icon.png" width="24px" height="50px" alt="">
+            </div>
+        </div>
+
+
+        <!-- hdr ✔✔ -->
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top"
+                style="position: absolute; top: 0; width: 100%; z-index: 10;">
+                <div class="container">
+                    <a class="navbar-brand text-white" href="#"><img src="/img/Mask group.png" width="50%"
+                            style="color: white;" width="100" alt></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link  text-white fs-18 jost-font" aria-current="page"
+                                    href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-white fs-18 jost-font " aria-current="page"
+                                    href="/About.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-white fs-18 jost-font " aria-current="page"
+                                    href="/Project.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-white fs-18 jost-font " aria-current="page"
+                                    href="/Service.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-white fs-18 jost-font " aria-current="page"
+                                    href="/Amenities.html">Amenities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  text-white fs-18 jost-font " aria-current="page"
+                                    href="/Villas.html">Villas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  active text-green fs-18 jost-font " aria-current="page"
+                                    href="/FAQ.html">FAQ’s</a>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline text-white fs-18 jost-font me-2" type="button">Get A Quote
+                            <i class="fa-solid fa-angles-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+    </div>
+
+
 
     <!-- Our Amenities ✔✔-->
     <div class="container mt-5 px-0">
         <div class="container-fluid need">
             <div>
-                <h5 class="text-green text-center mb-0">Our Amenities</h5>
-                <center>
-                    <hr style="width: 12%;  color: #82a93c; border-width: 2px;" class="mb-3 mt-2">
-                </center>
+                <div class="d-md-block d-none">
+                    <h5 class="text-green text-center mb-0">Our Amenities</h5>
+                    <center>
+                        <hr style="width: 12%;  color: #82a93c; border-width: 2px;" class="mb-3 mt-2">
+                    </center>
+                    <div>
+                        <h2 class="text-white font-Kalnia  text-center text-uppercase">Everything
+                            You Need</h2>
+                    </div>
+                </div>
+                <div class="d-md-none d-block">
+                    <h5 class="text-green about-fs-20  text-center mb-0">Our Amenities</h5>
+                    <center>
+                        <hr style="width: 12%;  color: #82a93c; border-width: 2px;" class="mb-2 mt-2">
+                    </center>
+                    <div>
+                        <h2 class="text-white fs-20 font-Kalnia  text-center text-uppercase">Everything
+                            You Need</h2>
+                    </div>
+                </div>
             </div>
 
 
-            <div>
-                <h2 class="text-white font-Kalnia  text-center text-uppercase">Everything
-                    You Need</h2>
-            </div>
+
             <div class="box d-flex justify-content-center">
                 <div class="need_pd tablinks" onclick="openCity(event, 'tab1Content')" id="defaultOpen">
                     <div class="pic">
@@ -121,7 +201,7 @@
                 <div class="need_pd" onclick="openCity(event, 'tab3Content')">
                     <div class="pic">
                         <div class="op_iii active" style="cursor: pointer;">
-                            <img width="100%" src="./img/terrace.png" alt="">
+                            <img width="100%" src="./img/parking.png" alt="">
                         </div>
                     </div>
                     <p>Terrace</p>
@@ -138,7 +218,7 @@
                 <div class="need_pd" onclick="openCity(event, 'tab5Content')">
                     <div class="pic">
                         <div class="op_v active" style="cursor: pointer;">
-                            <img width="100%" src="./img/sit-out-area.png" alt="">
+                            <img width="100%" src="./img/parking.png" alt="">
                         </div>
                     </div>
                     <p class="p-hov">Sit Out Area</p>
@@ -150,8 +230,8 @@
                         <div class="pic_l1"></div>
                     </div>
                     <div class="col-lg-6 p-3">
-                        <h2 class="text-white font-Kalnia text-uppercase">Your
-                            Happy Place Awaits! (Play Ground)</h2>
+                        <h2 class="text-white Amenities-fs-40  font-Kalnia text-uppercase">Your
+                            Happy Place Awaits! </h2>
                         <p>Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Cras nunc orci, scelerisque
                             laoreet
@@ -173,8 +253,8 @@
                         <div class="pic_l2"></div>
                     </div>
                     <div class="col-lg-6 p-3">
-                        <h2 class="text-white font-Kalnia text-uppercase">Your
-                            Happy Place Awaits! ( Parking )</h2>
+                        <h2 class="text-white font-Kalnia Amenities-fs-40 text-uppercase">Your
+                            Happy Place Awaits! </h2>
                         <p>Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Cras nunc orci, scelerisque
                             laoreet
@@ -196,8 +276,8 @@
                         <div class="pic_l3"></div>
                     </div>
                     <div class="col-lg-6 p-3">
-                        <h2 class="text-white font-Kalnia text-uppercase">Your
-                            Happy Place Awaits! (Terrace)</h2>
+                        <h2 class="text-white font-Kalnia Amenities-fs-40 text-uppercase">Your
+                            Happy Place Awaits!</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Cras nunc orci, scelerisque
                             laoreet
@@ -219,8 +299,8 @@
                         <div class="pic_l4"></div>
                     </div>
                     <div class="col-lg-6 p-3">
-                        <h2 class="text-white font-Kalnia text-uppercase">Your
-                            Happy Place Awaits! (Gym)</h2>
+                        <h2 class="text-white font-Kalnia Amenities-fs-40 text-uppercase">Your
+                            Happy Place Awaits!</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Cras nunc orci, scelerisque
                             laoreet
@@ -242,8 +322,8 @@
                         <div class="pic_l5"></div>
                     </div>
                     <div class="col-lg-6 p-3">
-                        <h2 class="text-white font-Kalnia text-uppercase">Your
-                            Happy Place Awaits! (Sit Out Area)</h2>
+                        <h2 class="text-white font-Kalnia Amenities-fs-40 text-uppercase">Your
+                            Happy Place Awaits!</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Cras nunc orci, scelerisque
                             laoreet
@@ -262,14 +342,13 @@
         </div>
     </div>
 
-
-
-    <!-- faq -->
-    <div class="container mt-5">
+    <!-- faq ✔✔-->
+    <div class="container p-0  mt-5">
         <div class="container-fluid faq">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-12 p-0">
-                    <h2 class="text-white font-Kalnia mt-md-0 mt-4 mb-0 text-uppercase">Frequently Asked Questions</h2>
+                    <h2 class="text-white faq-fs-40 font-Kalnia mt-md-0 mt-3 mb-0 text-uppercase">Frequently
+                        Asked Questions</h2>
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item wow fadeInUp">
                             <h2 class="accordion-header" id="headingOne">
@@ -282,10 +361,17 @@
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Our independent living Villas are designed for residents who are still active, able
-                                    and require very little in the way of assistance. Residents have all the comforts of
-                                    home, while enjoying the companionship, social life and security, medical support
-                                    that comes with our wonderful community living
+                                    Our independent living Villas are
+                                    designed for residents who are still
+                                    active, able
+                                    and require very little in the way of
+                                    assistance. Residents have all the
+                                    comforts of
+                                    home, while enjoying the companionship,
+                                    social life and security, medical
+                                    support
+                                    that comes with our wonderful community
+                                    living
                                 </div>
                             </div>
                         </div>
@@ -300,10 +386,17 @@
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Our independent living Villas are designed for residents who are still active, able
-                                    and require very little in the way of assistance. Residents have all the comforts of
-                                    home, while enjoying the companionship, social life and security, medical support
-                                    that comes with our wonderful community living
+                                    Our independent living Villas are
+                                    designed for residents who are still
+                                    active, able
+                                    and require very little in the way of
+                                    assistance. Residents have all the
+                                    comforts of
+                                    home, while enjoying the companionship,
+                                    social life and security, medical
+                                    support
+                                    that comes with our wonderful community
+                                    living
                                 </div>
                             </div>
                         </div>
@@ -318,10 +411,17 @@
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Our independent living Villas are designed for residents who are still active, able
-                                    and require very little in the way of assistance. Residents have all the comforts of
-                                    home, while enjoying the companionship, social life and security, medical support
-                                    that comes with our wonderful community living
+                                    Our independent living Villas are
+                                    designed for residents who are still
+                                    active, able
+                                    and require very little in the way of
+                                    assistance. Residents have all the
+                                    comforts of
+                                    home, while enjoying the companionship,
+                                    social life and security, medical
+                                    support
+                                    that comes with our wonderful community
+                                    living
                                 </div>
                             </div>
                         </div>
@@ -336,10 +436,17 @@
                             <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Our independent living Villas are designed for residents who are still active, able
-                                    and require very little in the way of assistance. Residents have all the comforts of
-                                    home, while enjoying the companionship, social life and security, medical support
-                                    that comes with our wonderful community living
+                                    Our independent living Villas are
+                                    designed for residents who are still
+                                    active, able
+                                    and require very little in the way of
+                                    assistance. Residents have all the
+                                    comforts of
+                                    home, while enjoying the companionship,
+                                    social life and security, medical
+                                    support
+                                    that comes with our wonderful community
+                                    living
                                 </div>
                             </div>
                         </div>
@@ -354,10 +461,17 @@
                             <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Our independent living Villas are designed for residents who are still active, able
-                                    and require very little in the way of assistance. Residents have all the comforts of
-                                    home, while enjoying the companionship, social life and security, medical support
-                                    that comes with our wonderful community living
+                                    Our independent living Villas are
+                                    designed for residents who are still
+                                    active, able
+                                    and require very little in the way of
+                                    assistance. Residents have all the
+                                    comforts of
+                                    home, while enjoying the companionship,
+                                    social life and security, medical
+                                    support
+                                    that comes with our wonderful community
+                                    living
                                 </div>
                             </div>
                         </div>
@@ -372,10 +486,17 @@
                             <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Our independent living Villas are designed for residents who are still active, able
-                                    and require very little in the way of assistance. Residents have all the comforts of
-                                    home, while enjoying the companionship, social life and security, medical support
-                                    that comes with our wonderful community living
+                                    Our independent living Villas are
+                                    designed for residents who are still
+                                    active, able
+                                    and require very little in the way of
+                                    assistance. Residents have all the
+                                    comforts of
+                                    home, while enjoying the companionship,
+                                    social life and security, medical
+                                    support
+                                    that comes with our wonderful community
+                                    living
                                 </div>
                             </div>
                         </div>
@@ -387,6 +508,9 @@
             </div>
         </div>
     </div>
+
+
+
 
     <!-- Testimonial (What People Are Saying ) -->
     <div class="container-fluid px-0 mt-5 pt-5 mb-5 pb-5 d-md-block d-none">
@@ -512,12 +636,12 @@
     <!--Testimonial Mobile view -->
     <div id="carouselExampleControls" class="carousel slide mt-5 pt-5 d-md-none d-block" data-bs-ride="carousel">
         <div class="row mb-4">
-            <h5 class="text-green text-center">Testimonial</h5>
+            <h5 class="text-green about-fs-20 mb-0 text-center">Testimonial</h5>
             <center>
-                <hr style="width: 12%;  color: #82a93c; border-width: 2px;">
+                <hr style="width: 12%;  color: #82a93c; border-width: 2px;" class="my-2">
             </center>
             <div>
-                <h2 class="text-white font-Kalnia  text-center text-uppercase">What People Are Saying </h2>
+                <h2 class="text-white font-Kalnia   text-center text-uppercase">What People Are Saying </h2>
             </div>
         </div>
         <div class="row mt-3">
@@ -567,12 +691,12 @@
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa-solid fa-arrow-left"></i></span>
             <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-arrow-left"></i></span>
+            <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
@@ -580,12 +704,18 @@
 
 
 
-    <!-- Gallary ✔✔-->
-    <div class="container pt-md-5 pt-4 pb-md-0 pb-5 position-relative">
+     <!-- Gallary  ✔✔-->
+     <div class="container pt-md-5 pt-5 pb-md-0 pb-5 position-relative">
         <div class="row mb-3">
-            <div>
+            <div class="d-md-block d-none">
                 <h5 class="fs-20 mb-0 text-green mb-0 ">Gallary</h5>
                 <hr style="width: 10%; color: #82a93c; border-width: 2px;" class="mb-2 mt-2">
+            </div>
+            <div class="d-md-none d-block mt-5">
+                <h5 class="about-fs-20  mb-0 text-center text-green mb-0 ">Gallary</h5>
+                <center>
+                    <hr style="width: 30%; color: #82a93c; border-width: 2px;" class="mb-2 mt-2">
+                </center>
             </div>
             <h2 class="fsg-40 text-white text-md-start text-center font-Kalnia text-uppercase">Our
                 Recent Projects</h2>
@@ -596,7 +726,7 @@
                     <img class="slide-box" width="100%" src="/img/slide-1.png" alt>
                     <div class="gallary-pos text-center" style="cursor: pointer;">
                         <div class="learn">
-                            <h5 class="text-white border-bottom-color font-Kalnia mb-0">Learn More</h5>
+                            <h5 class="text-white learn-fs-20 border-bottom-color font-Kalnia mb-0">Learn More</h5>
                             <span style="color: white;" class="material-symbols-rounded">
                                 trending_flat
                             </span>
@@ -607,7 +737,7 @@
                     <img class="slide-box" width="100%" src="/img/silder-2.png" alt>
                     <div class="gallary-pos text-center" style="cursor: pointer;">
                         <div class="learn">
-                            <h5 class="text-white border-bottom-color font-Kalnia mb-0">Learn More</h5>
+                            <h5 class="text-white learn-fs-20 border-bottom-color font-Kalnia mb-0">Learn More</h5>
                             <span style="color: white;" class="material-symbols-rounded">
                                 trending_flat
                             </span>
@@ -618,7 +748,7 @@
                     <img class="slide-box" width="100%" src="/img/silder-3.png" alt>
                     <div class="gallary-pos text-center" style="cursor: pointer;">
                         <div class="learn">
-                            <h5 class="text-white border-bottom-color font-Kalnia mb-0">Learn More</h5>
+                            <h5 class="text-white learn-fs-20 border-bottom-color font-Kalnia mb-0">Learn More</h5>
                             <span style="color: white;" class="material-symbols-rounded">
                                 trending_flat
                             </span>
@@ -629,7 +759,7 @@
                     <img class="slide-box" width="100%" src="/img/silder-4.png" alt>
                     <div class="gallary-pos text-center" style="cursor: pointer;">
                         <div class="learn">
-                            <h5 class="text-white border-bottom-color font-Kalnia mb-0">Learn More</h5>
+                            <h5 class="text-white learn-fs-20 border-bottom-color font-Kalnia mb-0">Learn More</h5>
                             <span style="color: white;" class="material-symbols-rounded">
                                 trending_flat
                             </span>
@@ -640,7 +770,7 @@
                     <img class="slide-box" width="100%" src="/img/slide-1.png" alt>
                     <div class="gallary-pos text-center" style="cursor: pointer;">
                         <div class="learn">
-                            <h5 class="text-white border-bottom-color font-Kalnia mb-0">Learn More</h5>
+                            <h5 class="text-white learn-fs-20 border-bottom-color font-Kalnia mb-0">Learn More</h5>
                             <span style="color: white;" class="material-symbols-rounded">
                                 trending_flat
                             </span>
@@ -651,7 +781,7 @@
                     <img class="slide-box" width="100%" src="/img/silder-2.png" alt>
                     <div class="gallary-pos text-center" style="cursor: pointer;">
                         <div class="learn">
-                            <h5 class="text-white border-bottom-color font-Kalnia mb-0">Learn More</h5>
+                            <h5 class="text-white learn-fs-20 border-bottom-color font-Kalnia mb-0">Learn More</h5>
                             <span style="color: white;" class="material-symbols-rounded">
                                 trending_flat
                             </span>
@@ -661,7 +791,7 @@
                 <div class="ms-2 g-none" style="position: relative;">
                     <img class="slide-box" width="100%" src="/img/silder-3.png" alt>
                     <div class="gallary-pos text-center" style="cursor: pointer;">
-                        <h5 class="text-white border-bottom-color font-Kalnia mb-0">Learn More</h5>
+                        <h5 class="text-white learn-fs-20 border-bottom-color font-Kalnia mb-0">Learn More</h5>
                         <span style="color: white;" class="material-symbols-rounded">
                             trending_flat
                         </span>
@@ -670,7 +800,7 @@
                 <div class="ms-2 g-none" style="position: relative;">
                     <img class="slide-box" width="100%" src="/img/silder-4.png" alt>
                     <div class="gallary-pos text-center" style="cursor: pointer;">
-                        <h5 class="text-white border-bottom-color font-Kalnia mb-0">Learn More</h5>
+                        <h5 class="text-white learn-fs-20 border-bottom-color font-Kalnia mb-0">Learn More</h5>
                         <span style="color: white;" class="material-symbols-rounded">
                             trending_flat
                         </span>

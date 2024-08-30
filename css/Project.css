@@ -167,7 +167,7 @@
     position: absolute;
     text-align: center;
     top: 35%;
-    left: 29%;
+    left: 31%;
     color: white;
     z-index: 1;
 }
@@ -301,6 +301,10 @@
     color: white;
 }
 
+.learn-fs-20 {
+    font-size: 20px;
+}
+
 @media (min-width : 991px) {
     .fsg-40 {
         font-size: 30px;
@@ -312,7 +316,7 @@
 @media (max-width : 768px) {
 
     .fsg-40 {
-        font-size: 28px;
+        font-size: 21px;
     }
 
     .slick-next,
@@ -327,6 +331,11 @@
     .slick-prev {
         left: 85% !important;
     }
+
+    .learn-fs-20 {
+        font-size: 16px;
+    }
+
 
 }
 
@@ -344,6 +353,19 @@
         top: 105% !important;
     }
 
+    .gallary-pos {
+        position: absolute;
+        top: 45%;
+        left: 33% !important;
+    }
+
+
+}
+
+@media (max-width : 375px) {
+    .learn-fs-20 {
+        font-size: 16px;
+    }
 }
 
 @media (max-width:320px) {
@@ -370,6 +392,11 @@
 
 /* Our Amenities */
 /* need */
+
+.Amenities-fs-40 {
+    font-size: 40px;
+}
+
 .need .row {
     background-color: var(--light-gry);
 }
@@ -715,6 +742,18 @@
     }
 }
 
+@media (max-width : 375px) {
+    .need p {
+        font-size: 13px !important;
+        line-height: 18.79px !important;
+        padding-top: 7px;
+    }
+
+    .Amenities-fs-40 {
+        font-size: 18px;
+    }
+}
+
 @media(max-width:362px) {
 
     /* need */
@@ -795,8 +834,9 @@
 
 
 
-/* Project */
 
+
+/* Project */
 .silder-pos {
     position: absolute;
     bottom: 0;
@@ -875,6 +915,26 @@ img {
     border-radius: 5px !important;
 }
 
+.fs-24 {
+    font-size: 24px;
+}
+
+.project-fs-20 {
+    font-size: 20px;
+}
+
+
+
+@media (max-width:576px) {
+    .fs-24 {
+        font-size: 18px;
+    }
+
+    .project-fs-20 {
+        font-size: 13px;
+    }
+
+}
 
 
 /* footer */
@@ -911,7 +971,7 @@ img {
 }
 
 .ffs-18 {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .mybox1 {
@@ -922,9 +982,39 @@ img {
     background-color: #212121;
 }
 
+.bg-dark-body {
+    background-color: #1b1b1b !important;
+}
+
 .form-control1::placeholder {
     color: white;
     opacity: 0.7;
     font-weight: normal;
     font-family: 'jost', sans-serif;
+}
+
+.border-bottomm {
+    border-bottom: 2px solid white !important;
+}
+
+@media (max-width : 375px) {
+    .ffs-18 {
+        font-size: 13px;
+    }
+
+}
+
+
+
+
+.about-fs-20 {
+    font-size: 15px;
+}
+
+.about-fs-40 {
+    font-size: 24px;
+}
+
+.about-fs-6 {
+    font-size: 13px;
 }
