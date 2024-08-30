@@ -75,6 +75,7 @@
     border-radius: 0 !important;
     padding: 10px 30px 10px 30px !important;
 }
+
 .btn-outline {
     border: 1px solid white !important;
     border-radius: 0 !important;
@@ -115,7 +116,7 @@
 
 
 
-/* Mobile View hdr */
+/* desk View hdr */
 
 .bg-img {
     background-image: url(../img/silde1.png);
@@ -233,21 +234,60 @@
     }
 }
 
+/* mobile */
+.bg-img-mob {
+    background-image: url(../img/silde1.png);
+    width: 100%;
+    height: 170px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.pos-ab-mob {
+    content: 'projects';
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 15%;
+    color: white;
+    z-index: 1;
+}
+
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.mouse-icon-mob {
+    position: absolute;
+    top: 75%;
+    left: 44%;
+}
+
+
 
 /*  What We Do ( Our Serrvice ) */
+.btn-outline-mob {
+    border: 1px solid white !important;
+    border-radius: 0 !important;
+    padding: 6px 22px 6px 22px !important;
+}
+
 
 .our-icon {
     position: absolute;
     top: 242px;
-    left: 223px;
+    left: 244px;
     z-index: 999;
 }
 
 @media (max-width : 576px) {
     .our-icon {
         position: absolute;
-        top: 49%;
-        left: 77%;
+        top: 59%;
+        left: 86%;
         z-index: 999;
     }
 }
@@ -470,9 +510,44 @@
     right: 10px;
 }
 
+@media (max-width : 375px) {
+
+
+    .carousel-control-next {
+        right: 128px !important;
+    }
+
+    .carousel-control-prev {
+        left: 128px !important;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        position: absolute;
+        top: 494px !important;
+        bottom: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        background: 0 0;
+        border: 0;
+        opacity: .5;
+    }
+}
+
 
 /* Our Amenities */
 /* need */
+
+.Amenities-fs-40 {
+    font-size: 40px;
+}
+
 .need .row {
     background-color: var(--light-gry);
 }
@@ -504,7 +579,7 @@
     justify-content: center;
     /* Centers horizontally */
     align-items: center;
-    padding: 18px 19px;;
+    padding: 8px 8px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -517,7 +592,7 @@
     justify-content: center;
     /* Centers horizontally */
     align-items: center;
-    padding: 18px 19px;;
+    padding: 8px 8px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -530,7 +605,7 @@
     justify-content: center;
     /* Centers horizontally */
     align-items: center;
-    padding: 18px 19px;;
+    padding: 8px 8px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -543,7 +618,7 @@
     justify-content: center;
     /* Centers horizontally */
     align-items: center;
-    padding: 18px 19px;;
+    padding: 8px 8px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -556,7 +631,7 @@
     justify-content: center;
     /* Centers horizontally */
     align-items: center;
-    padding: 25px 22px;
+    padding: 15px 10px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -818,6 +893,18 @@
     }
 }
 
+@media (max-width : 375px) {
+    .need p {
+        font-size: 13px !important;
+        line-height: 18.79px !important;
+        padding-top: 7px;
+    }
+
+    .Amenities-fs-40 {
+        font-size: 18px;
+    }
+}
+
 @media(max-width:362px) {
 
     /* need */
@@ -895,6 +982,7 @@
     letter-spacing: 0.16px;
     color: var(--white);
 }
+
 
 
 
@@ -1109,7 +1197,7 @@
 }
 
 .ffs-18 {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .mybox1 {
@@ -1120,9 +1208,24 @@
     background-color: #212121;
 }
 
+.bg-dark-body {
+    background-color: #1b1b1b !important;
+}
+
 .form-control1::placeholder {
     color: white;
     opacity: 0.7;
     font-weight: normal;
     font-family: 'jost', sans-serif;
+}
+
+.border-bottomm {
+    border-bottom: 2px solid white !important;
+}
+
+@media (max-width : 375px) {
+    .ffs-18 {
+        font-size: 13px;
+    }
+
 }
