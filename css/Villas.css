@@ -835,7 +835,8 @@
 }
 
 .bg-col {
-    background-color: #7e7e7e0a;
+    background-color: #7e7e7e23;
+    height: 200px;
 }
 
 .fs-8 {
@@ -855,4 +856,18 @@
 
 .dot-fs-14 {
     font-size: 7px !important;
+}
+
+
+.col-position {
+    position: absolute;
+    top: 90px;
+    right: 70px;
+    z-index: 999;
+}
+
+
+
+.pd-5{
+    padding: 150px 65px !important;
 }
